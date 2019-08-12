@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #我的app
     'gallery.apps.GalleryConfig',
+    'blog',
 ]
 
 MIDDLEWARE = [
