@@ -22,7 +22,6 @@ from django.views.static import serve
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home),
-    path('blog/',include('blog.urls')),
-    #path('blog/',blog.views.blog_page),
+    # path('',views.home),
+    path('',views.blog_page),
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

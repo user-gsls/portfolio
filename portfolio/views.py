@@ -1,6 +1,10 @@
 from django.shortcuts import render
-from gallery.models import Gallery
+from blog.models import Blog
 
-def home(request):
-    gallerys = Gallery.objects
-    return render(request,'home.html',{'gallerys':gallerys})
+# Create your views here.
+
+def blog_page(request):
+    blogs = Blog.objects
+    return render(request,'home.html',{'blogs':blogs})
+
+
