@@ -3,6 +3,6 @@ from .models import Blog
 
 # Create your views here.
 
-def blog_page(request):
+def blog_child1(request):
     blogs = Blog.objects
-    return render(request,'home.html',{'blogs':blogs})
+    return render(request,'blog-1.html',{'blogs':blogs})
