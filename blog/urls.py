@@ -19,4 +19,5 @@ from . import views
 
 urlpatterns = [
     path('',views.blog_child1),
+    path('<int:blog_id>/',views.blog_text),
 ]
