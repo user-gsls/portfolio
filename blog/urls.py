@@ -17,7 +17,9 @@ Including another URLconf
 from django.urls import path
 from . import views
 
+app_name ='[blog]'
+
 urlpatterns = [
-    path('',views.blog_child1),
+    path('^$',views.blog_child1,name='main_blog'),
     path('<int:blog_id>/',views.blog_text),
 ]
